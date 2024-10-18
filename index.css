@@ -2,11 +2,11 @@
   font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
-    scroll-behavior:  !important;
+    scroll-behavior: smooth !important;
     transition: .3s;
 }
 html{
-    scroll-behavior:  !important;
+    scroll-behavior: smooth !important;
 }
 .hero {
   height: 100vh;
