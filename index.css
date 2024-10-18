@@ -2,6 +2,11 @@
   font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
+    scroll-behavior:  !important;
+    transition: .3s;
+}
+html{
+    scroll-behavior:  !important;
 }
 .hero {
   height: 100vh;
@@ -47,6 +52,7 @@ section {
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  user-select: none;
   background: transparent;
 }
 main {
@@ -72,7 +78,7 @@ section {
   height: 80vh;
   border-radius: 20px;
   border-top: 12px solid #fff;
-  border-bottom: 12px solid #fff;
+  border-bottom: 32px solid #fff;
   background: #fff;
 }
 
