@@ -12,6 +12,12 @@ let observer = new IntersectionObserver((entries) => {
       // Calculate progress based on the section index
       let sectionIndex = Array.from(sections).indexOf(entry.target);
       let progress = (sectionIndex) / sections.length * 100;
+      if ((sections.length*progress)>75) {
+        document.querySelector(".controller").style.display="block";
+      }
+      else{
+        document.querySelector(".controller").style.display="none";
+      }
       progressBar.style.top = progress + "%";
     }
   });
@@ -24,4 +30,28 @@ sections.forEach(section => {
 
 document.body.onload = function () {
   document.querySelector("body > main > section.hero > div > nav > div > div.absolute.inset-x-0.z-20.w-full.px-6.py-4.transition-all.duration-300.ease-in-out.bg-white.dark\\:bg-transparent.md\\:mt-0.md\\:p-0.md\\:top-0.md\\:relative.md\\:bg-transparent.md\\:w-auto.md\\:opacity-100.md\\:translate-x-0.md\\:flex.md\\:items-center.opacity-0.-translate-x-full > div > a:nth-child(1)").click()
+// Select the buttons
+const scrollUpBtn = document.getElementById('scrollUp');
+const scrollDownBtn = document.getElementById('scrollDown');
+
+// Select the main element where the scroll snapping is applied
+const mainElement = document.querySelector('main');
+
+// Scroll up when the up button is clicked
+scrollUpBtn.addEventListener('click', () => {
+  mainElement.scrollBy({
+    top: -window.innerHeight, // Scroll by one viewport height
+    behavior: 'smooth'        // Smooth scroll
+  });
+});
+
+// Scroll down when the down button is clicked
+scrollDownBtn.addEventListener('click', () => {
+  mainElement.scrollBy({
+    top: window.innerHeight,  // Scroll by one viewport height
+    behavior: 'smooth'        // Smooth scroll
+  });
+});
+
 }
+
