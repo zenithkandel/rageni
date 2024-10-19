@@ -14,7 +14,7 @@
 <body>
     <div id="scrollIndicator">
         <div class="progress" id="progressBar"></div>
-      </div>
+    </div>
     <main>
         <section class="hero">
             <div class="float h-5/6 w-5/6 visibled">
@@ -50,7 +50,7 @@
                                 <a class="nav-text my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-green-500 dark:hover:text-green-400 md:mx-4 md:my-0"
                                     href="#About">About Us</a>
                                 <a class="nav-text my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-green-500 dark:hover:text-green-400 md:mx-4 md:my-0"
-                                href="#Services">Services</a>
+                                    href="#Services">Services</a>
                                 <a class="nav-text my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-green-500 dark:hover:text-green-400 md:mx-4 md:my-0"
                                     href="#Team">Team</a>
                                 <a class="nav-text my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-green-500 dark:hover:text-green-400 md:mx-4 md:my-0"
@@ -71,26 +71,60 @@
         </section>
         <br>
         <section id="About">
-            <div class="float h-2/3 w-2/3 flex">
-                <h1 class="text-5xl font-bold text-slate-100 m-auto text-center">About</h1>
-            </div>
+
+            <main class="relative z-20 w-full md:flex md:items-center xl:mt-12 ml-12">
+                <div class="absolute float w-5/6 h-2/3  -z-10 rounded-2xl"></div>
+
+                <div
+                    class="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                    <img class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[28rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+                        src="assets/images/naresh.jpg" alt="client photo" />
+
+                    <div class="mt-2 md:mx-6">
+                        <div>
+                            <p class="text-xl font-medium tracking-tight text-white">Naresh Kandel</p>
+                        </div>
+                        <p class="mt-4 text-lg leading-relaxed text-white md:text-xl"> “Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita
+                            laborum saepe voluptas perferendis delectus assumenda”.</p>
+
+                        <div class="flex items-center justify-between mt-6 md:justify-start">
+                            <button title="left arrow"
+                                class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+
+                            <button title="right arrow"
+                                class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 md:mx-6 hover:bg-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </section><br>
         <section id="Services">
-            <div class="float h-2/3 w-2/3 flex">
-                <h1 class="text-5xl font-bold text-slate-100 m-auto text-center">Services</h1>
+            <div class="float h-2/3 w-2/3 pt-8">
+                <h1 class="font-mono text-5xl font-bold text-slate-100 m-auto text-center">Services</h1>
             </div>
 
         </section><br>
         <section id="Team">
-            <div class="float h-2/3 w-2/3 flex">
-                <h1 class="text-5xl font-bold text-slate-100 m-auto text-center">Team</h1>
+            <div class="float h-2/3 w-2/3 pt-8">
+                <h1 class="font-mono text-5xl font-bold text-slate-100 m-auto text-center">Team</h1>
             </div>
 
         </section>
         <br>
         <section id="Contact">
-            <div class="float h-2/3 w-2/3 flex">
-                <h1 class="text-5xl font-bold text-slate-100 m-auto text-center">Contact</h1>
+            <div class="float h-2/3 w-2/3 pt-8">
+                <h1 class="font-mono text-5xl font-bold text-slate-100 m-auto text-center">Contact</h1>
             </div>
 
         </section>
