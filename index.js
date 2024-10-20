@@ -62,11 +62,10 @@ const bodyElement = document.body;  // Select the body element
 
 // Array of background images
 const backgroundImages = [
-  'url(assets/images/hero-bg.jpg)',
-  'url(assets/images/hero-bg1.jpg)',
-  'url(assets/images/hero-bg2.jpg)',
-  'url(assets/images/hero-bg3.jpg)',
-  'url(assets/images/hero-bg4.jpg)'
+  'url(assets/images/hero-bg.webp)',
+  'url(assets/images/hero-bg1.webp)',
+  'url(assets/images/hero-bg2.webp)',
+  'url(assets/images/hero-bg3.webp)'
 ];
 
 // Fade background on scroll with transition
