@@ -20,7 +20,7 @@ html{
   left: 50%;
   transform: translate(-50%, -50%);
   background: #22222266;
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(1px);
   border-radius: 20px;
   transition: 1s;
   /* position: fixed; */
@@ -28,7 +28,7 @@ html{
 
 body {
   overflow-x: hidden;
-  background: url(assets/images/hero-bg.jpg);
+  background: url(assets/images/output.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,9 +76,9 @@ section {
   width: 10px;
   height: 80vh;
   border-radius: 20px;
-  border-top: 12px solid #fff;
-  border-bottom: 32px solid #fff;
-  background: #fff;
+  border-top: 12px solid #3a3939;
+  border-bottom: 12px solid #3a3939;
+  background: #3a3939;
 }
 
 #scrollIndicator .progress {
@@ -87,7 +87,7 @@ section {
   left: 50%;
   transform: translate(-50%,0);
   height: calc(100% / 4);
-  background: #385938; /* Gradient for the progress */
+  background: #222222; /* Gradient for the progress */
   /* border: 1px solid black; */
   border-radius: 8px;
   transition: height 0.3s ease-out;
@@ -96,6 +96,6 @@ section {
 }
 
 #scrollIndicator .progress:hover {
-  background: #235923; /* Gradient for the progress */
+  background: #181818; /* Gradient for the progress */
   cursor: pointer;
 }

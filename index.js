@@ -56,38 +56,38 @@ scrollDownBtn.addEventListener('click', () => {
 
 
 
-// Select the main element
-const mainElement = document.querySelector('main');
-const bodyElement = document.body;  // Select the body element
+// // Select the main element
+// const mainElement = document.querySelector('main');
+// const bodyElement = document.body;  // Select the body element
 
-// Array of background images
-const backgroundImages = [
-  'url(assets/images/hero-bg.webp)',
-  'url(assets/images/hero-bg1.webp)',
-  'url(assets/images/hero-bg2.webp)',
-  'url(assets/images/hero-bg3.webp)'
-];
+// // Array of background images
+// const backgroundImages = [
+//   'url(assets/images/hero-bg.webp)',
+//   'url(assets/images/hero-bg1.webp)',
+//   'url(assets/images/hero-bg2.webp)',
+//   'url(assets/images/hero-bg3.webp)'
+// ];
 
-// Fade background on scroll with transition
-let currentIndex = 0;
+// // Fade background on scroll with transition
+// let currentIndex = 0;
 
-mainElement.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll("section");
-  let sectionIndex = Math.floor(mainElement.scrollTop / window.innerHeight); // Determine the section index
+// mainElement.addEventListener('scroll', () => {
+//   const sections = document.querySelectorAll("section");
+//   let sectionIndex = Math.floor(mainElement.scrollTop / window.innerHeight); // Determine the section index
 
-  // If the section has changed
-  if (sectionIndex !== currentIndex) {
-    currentIndex = sectionIndex;
+//   // If the section has changed
+//   if (sectionIndex !== currentIndex) {
+//     currentIndex = sectionIndex;
     
-    // Apply fade-out first
-    bodyElement.style.transition = 'background 0.1s ease-out';
+//     // Apply fade-out first
+//     bodyElement.style.transition = 'background 0.1s ease-out';
 
-    setTimeout(() => {
-      // Change the background image
-      bodyElement.style.backgroundImage = backgroundImages[sectionIndex % backgroundImages.length];
+//     setTimeout(() => {
+//       // Change the background image
+//       bodyElement.style.backgroundImage = backgroundImages[sectionIndex % backgroundImages.length];
       
-      // Fade-in effect
-      bodyElement.style.transition = 'background 0.1s ease-in, opacity 0.1s ease-in';
-    }, 100); // Wait for the fade-out to complete
-  }
-});
+//       // Fade-in effect
+//       bodyElement.style.transition = 'background 0.1s ease-in, opacity 0.1s ease-in';
+//     }, 100); // Wait for the fade-out to complete
+//   }
+// });
