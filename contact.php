@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $header = "<table border='1'><tr><th>Name</th><th>Email</th><th>Phone</th><th>Message</th></tr>\n";
         file_put_contents($file, $header);
     }
+    
 
     // Append the form data in a new row
     file_put_contents($file, $data, FILE_APPEND);
