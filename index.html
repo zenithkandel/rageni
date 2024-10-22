@@ -30,7 +30,6 @@
                             <a href="#">
                                 <p class="text-slate-100 text-2xl nav-title">Rageni Agro Resort</p>
                             </a>
-
                             <!-- Mobile menu button -->
                             <div class="flex md:hidden lg:hidden">
                                 <button x-cloak @click="isOpen = !isOpen" type="button"
@@ -157,12 +156,12 @@
                         </div>
         
                         <div class="bg-transparent p-3 rounded-lg">
-                            <form class="m-0 space-y-2">
+                            <form class="m-0 space-y-2" method="POST" action="contact.php">
                                 <input type='text' placeholder='Name'
                                     class="w-full bg-zinc-800 rounded-lg py-3 px-4 text-gray-200 text-sm outline-zinc-200" />
                                 <input type='email' placeholder='Email'
                                     class="w-full bg-zinc-800 rounded-lg py-3 px-4 text-gray-200 text-sm outline-zinc-200" />
-                                <input type='text' placeholder='Subject'
+                                <input type='text' placeholder='Phone'
                                     class="w-full bg-zinc-800 rounded-lg py-3 px-4 text-gray-200 text-sm outline-zinc-200" />
                                 <textarea placeholder='Message' rows="6"
                                     class="w-full bg-zinc-800 rounded-lg px-4 text-gray-200 text-sm pt-3 outline-zinc-200"></textarea>
