@@ -43,14 +43,13 @@ if (!file_exists($file)) {
 }
 
 // Send email
-$to = $email;  // Send to user (or use another address)
+$to = "zenithkandel0@gmail.com";  // Send to user (or use another address)
 $subject = "Form Submission Confirmation";
 $body = "Hello $name,\n\nThank you for your submission. Here is a copy of your details:\n\nName: $name\nEmail: $email\nPhone: $phone\nMessage: $message\n\nBest regards,\nYour Company";
-$headers = "From: yourcompany@example.com";  // Replace with your sender email
+$headers = "From: info@kushmaartproject.com.np";  // Replace with your sender email
 
 if (mail($to, $subject, $body, $headers)) {
     echo "Form submitted successfully and email sent!";
 } else {
     echo "Form submitted, but email could not be sent.";
 }
-?>
