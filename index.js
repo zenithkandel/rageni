@@ -65,7 +65,7 @@ function modal_(name_){
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, doloribus! Deleniti, dolorum? Consequatur vero sed sunt mollitia, perspiciatis repudiandae excepturi aut maxime quisquam velit suscipit qui cum voluptatum reprehenderit distinctio fugit quas blanditiis provident nulla eligendi, quia enim incidunt esse. Cupiditate doloremque voluptatum tempore tenetur eaque placeat deleniti, eveniet asperiores minima quasi esse provident dolor tempora saepe iure quos accusamus magnam eum perferendis ut quas animi veniam blanditiis? A dolores magni, quae perspiciatis, ullam quaerat recusandae nemo nihil voluptates obcaecati tempora veritatis temporibus deserunt delectus. Exercitationem suscipit dolor cumque temporibus. Architecto ullam deleniti commodi vitae iste nulla hic, sit ab quo modi alias recusandae possimus, voluptatem dolorum officiis sapiente corrupti harum quaerat et nam, omnis in vero temporibus eveniet! Magni iusto maiores ipsam ab rem laboriosam quam odit cumque eveniet!
     KG KG KG KG KG
     `
-    document.querySelector(".modal-body").querySelector("img").setAttribute("src","assets/images/kg.png")
+    document.querySelector(".modal-body").querySelector("img").setAttribute("src","assets/images/kg.webp")
     document.querySelector(".modal-title").innerHTML = `KG Suppliers <div onclick="closeModal()" class="modal-close"><i class="fa fa-times"></i></div>`
   }
 
@@ -75,13 +75,19 @@ function modal_(name_){
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, doloribus! Deleniti, dolorum? Consequatur vero sed sunt mollitia, perspiciatis repudiandae excepturi aut maxime quisquam velit suscipit qui cum voluptatum reprehenderit distinctio fugit quas blanditiis provident nulla eligendi, quia enim incidunt esse. Cupiditate doloremque voluptatum tempore tenetur eaque placeat deleniti, eveniet asperiores minima quasi esse provident dolor tempora saepe iure quos accusamus magnam eum perferendis ut quas animi veniam blanditiis? A dolores magni, quae perspiciatis, ullam quaerat recusandae nemo nihil voluptates obcaecati tempora veritatis temporibus deserunt delectus. Exercitationem suscipit dolor cumque temporibus. Architecto ullam deleniti commodi vitae iste nulla hic, sit ab quo modi alias recusandae possimus, voluptatem dolorum officiis sapiente corrupti harum quaerat et nam, omnis in vero temporibus eveniet! Magni iusto maiores ipsam ab rem laboriosam quam odit cumque eveniet!
     Silver Silver Silver
     `
-    document.querySelector(".modal-body").querySelector("img").setAttribute("src","assets/images/sp.png")
+    document.querySelector(".modal-body").querySelector("img").setAttribute("src","assets/images/sp.webp")
     document.querySelector(".modal-title").innerHTML = `The Silver Palace <div onclick="closeModal()" class="modal-close"><i class="fa fa-times"></i></div>`
   }
   document.querySelector(".modal").style.display ="block";
 }
 function viewImage() {
-  
+  if (activeModal == "kg") {
+    location.href ="https://www.facebook.com/profile.php?id=100066467561990"
+  } 
+  if (activeModal== "silver") {
+    location.href ="https://www.facebook.com/profile.php?id=100066467561990"
+    
+  }
 }
 
 

@@ -27,7 +27,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background: url(assets/images/output.jpg);
+  background: url(assets/images/output.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
