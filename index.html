@@ -99,6 +99,25 @@
             <div class="float backdrop-blur-xl w-3/5 pt-8">
                 <h1 class="font-mono lg:text-5xl md:text-4xl font-bold text-slate-100 m-auto text-center">Services</h1>
                 <div class="mt-3 flex gap-6 flex-wrap justify-center py-8">
+                    <!-- Trigger Button -->
+<button data-overlay-target="#myModal" class="bg-blue-500 text-white p-2 rounded">
+    Open Modal
+  </button>
+  
+  <!-- Modal -->
+  <div id="myModal" class="hidden">
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+    <div class="fixed inset-0 flex items-center justify-center z-50">
+      <div class="bg-white p-6 rounded shadow-lg w-96">
+        <h2 class="text-xl font-bold">My Modal</h2>
+        <p class="mt-4">This is a simple modal example using Tailwind Overlay.</p>
+        <button data-overlay-dismiss class="mt-4 bg-red-500 text-white p-2 rounded">
+          Close Modal
+        </button>
+      </div>
+    </div>
+  </div>
+  
                     <div style="background: url('assets/images/kg.png');background-size: contain;"
                         class="cursor-pointer transform  rounded-xl h-40 w-40 md:h-64 md:w-64 shadow-xl transition duration-300 hover:scale-105">
                     </div>
@@ -194,5 +213,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/alpinejs" defer></script>
 <script src="index.js"></script>
+<script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+
 
 </html>
