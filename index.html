@@ -99,10 +99,12 @@
             <div class="float backdrop-blur-xl w-3/5 pt-8">
                 <h1 class="font-mono lg:text-5xl md:text-4xl font-bold text-slate-100 m-auto text-center">Services</h1>
                 <div class="mt-3 flex gap-6 flex-wrap justify-center py-8">
-                    <div onclick="modal_('KG')" style="background: url('assets/images/kg.png');background-size: contain;"
+                    <div onclick="modal_('KG')"
+                        style="background: url('assets/images/kg.png');background-size: contain;"
                         class="cursor-pointer transform  rounded-xl h-40 w-40 md:h-64 md:w-64 shadow-xl transition duration-300 hover:scale-105">
                     </div>
-                    <div onclick="modal_('Silver')" style="background: url('assets/images/sp.png');background-size: contain;"
+                    <div onclick="modal_('Silver')"
+                        style="background: url('assets/images/sp.png');background-size: contain;"
                         class="cursor-pointer transform  rounded-xl h-40 w-40 md:h-64 md:w-64 bg-white shadow-xl transition duration-300 hover:scale-105">
                     </div>
                 </div>
@@ -190,12 +192,22 @@
 
         </section>
         <div class="modal">
-            <div class="modal-title">
-                Modal Title
-                <div class="modal-close"><i class="fa fa-times"></i></div>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/kg.png" alt="">
+            <div class="modal-main">
+                <div class="modal-title">
+                    Modal Title
+                    <div onclick="closeModal()" class="modal-close"><i class="fa fa-times"></i></div>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/pp.png" alt="img not loaded">
+                    <div class="flex modal-image-div">
+                        <span class='text-center w-full'><i class='fa fa-image'></i> &nbsp;View Photos</span>
+                    </div>
+                    <p class="modal-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                        numquam labore ab nobis hic? Nihil modi repudiandae quas! Quidem sapiente deserunt doloribus
+                        libero laboriosam maxime sint iste voluptatem? Quod nulla eius officiis quaerat quos deserunt
+                        sint eum veritatis placeat nesciunt est illo, animi saepe amet asperiores, consequuntur cumque
+                        iure. Distinctio ea pariatur quidem sed quaerat velit cum.</p>
+                </div>
             </div>
         </div>
     </main>

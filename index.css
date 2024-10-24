@@ -2,11 +2,11 @@
   font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
-    scroll-behavior: smooth !important;
-    transition: .3s;
+  scroll-behavior: smooth !important;
+  transition: 0.3s;
 }
-html{
-    scroll-behavior: smooth !important;
+html {
+  scroll-behavior: smooth !important;
 }
 .hero {
   height: 100vh;
@@ -71,7 +71,7 @@ section {
 #scrollIndicator {
   position: fixed;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   left: 5%;
   width: 10px;
   height: 80vh;
@@ -85,7 +85,7 @@ section {
   width: 21px;
   position: relative;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   height: calc(100% / 4);
   background: #222222; /* Gradient for the progress */
   /* border: 1px solid black; */
@@ -98,4 +98,77 @@ section {
 #scrollIndicator .progress:hover {
   background: #181818; /* Gradient for the progress */
   cursor: pointer;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: #23232323;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+
+.modal-main {
+  height: 85vh;
+  width: 85vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: white;
+  font-family: poppins;
+}
+.modal-title{
+  font-size: 32px;
+}
+
+.modal-title::after{
+  content: "";
+  height: 6px;
+  border-radius: 20px;
+  width: 12%;
+  background: #cccccc;
+  display: block;
+}
+
+.modal-close{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.modal-body{
+  margin: 15px 0px 0px 15px;
+  background: none;
+}
+
+.modal-body img{
+  height: 180px;
+  border-radius: 20px;
+  width: 180px;
+}
+
+.modal-body .modal-image-div{
+  display: none;
+  align-items: center;
+  background: #23232338;
+  border-radius: 20px;
+  height: 180px;
+  width: 180px;
+  z-index: 91;
+  transform: translateY(-100%);
+  position: absolute;
+  user-select: none;
+  cursor: pointer;
+}
+
+.modal-body:hover ~ .modal-image-div{
+  display: flex;
 }
