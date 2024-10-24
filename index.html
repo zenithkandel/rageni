@@ -50,7 +50,7 @@
 
                         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-                            class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+                            class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
                             <div class="flex flex-col md:flex-row md:mx-6">
                                 <a class="nav-text my-2 text-gray-200 transition-colors duration-300 transform dark:text-gray-200 hover:text-slate-500 dark:hover:text-slate-400 md:mx-4 md:my-0"
                                     href="#About">About</a>
@@ -198,15 +198,11 @@
                     <div onclick="closeModal()" class="modal-close"><i class="fa fa-times"></i></div>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/pp.png" alt="img not loaded">
-                    <div class="flex modal-image-div">
+                    <img  src="assets/images/pp.png" alt="img not loaded">
+                    <div onclick="viewImage()" class="flex modal-image-div">
                         <span class='text-center w-full'><i class='fa fa-image'></i> &nbsp;View Photos</span>
                     </div>
-                    <p class="modal-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-                        numquam labore ab nobis hic? Nihil modi repudiandae quas! Quidem sapiente deserunt doloribus
-                        libero laboriosam maxime sint iste voluptatem? Quod nulla eius officiis quaerat quos deserunt
-                        sint eum veritatis placeat nesciunt est illo, animi saepe amet asperiores, consequuntur cumque
-                        iure. Distinctio ea pariatur quidem sed quaerat velit cum.</p>
+                    <p class="modal-description"></p>
                 </div>
             </div>
         </div>

@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth !important;
-  transition: 0.3s;
 }
 html {
   scroll-behavior: smooth !important;
@@ -104,9 +103,11 @@ section {
   height: 100vh;
   width: 100vw;
   background: #23232323;
+  backdrop-filter: blur(4.5px);
   position: fixed;
   z-index: 50;
   top: 0;
+  display: none;
   left: 0;
 }
 
@@ -152,23 +153,65 @@ section {
 .modal-body img{
   height: 180px;
   border-radius: 20px;
+  cursor: pointer;
   width: 180px;
+  float: left;
+  display: flex;
+  margin-right: 23px;
 }
 
 .modal-body .modal-image-div{
-  display: none;
+  display: flex;
   align-items: center;
-  background: #23232338;
+  background: #23232399;
   border-radius: 20px;
   height: 180px;
   width: 180px;
   z-index: 91;
-  transform: translateY(-100%);
   position: absolute;
   user-select: none;
   cursor: pointer;
+  transition: .3s;
+  opacity: 0;
 }
 
-.modal-body:hover ~ .modal-image-div{
+
+.modal-body .modal-image-div:hover{
+  opacity: 1;
+}
+
+.modal-body .modal-description{
   display: flex;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: monospace;
+  height: 70vh;
+  overflow-y: scroll;
+  transform: translateY(-5%);
+}
+
+@media (max-width:1300px) {
+  .modal-body .modal-description{
+    font-size: 15px;
+ }
+}
+@media (max-width:600px) {
+  .modal-body .modal-description{
+    display: block;
+    font-size: 14px;
+    height: 50vh;
+    transform: translateY(0);
+ }
+ .modal-body img,.modal-body .modal-image-div{
+  float: none;
+  height: 80px;
+  width: 80px;
+ }
+ .modal-body .modal-image-div{
+  transform: translateY(-100%);
+  font-size: 12px;
+ }
+ .modal-title{
+  font-size: 18px;
+ }
 }
