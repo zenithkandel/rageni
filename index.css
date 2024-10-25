@@ -125,11 +125,11 @@ section {
   color: white;
   font-family: poppins;
 }
-.modal-title{
+.modal-title {
   font-size: 32px;
 }
 
-.modal-title::after{
+.modal-title::after {
   content: "";
   height: 6px;
   border-radius: 20px;
@@ -138,19 +138,19 @@ section {
   display: block;
 }
 
-.modal-close{
+.modal-close {
   position: absolute;
   top: 5%;
   right: 5%;
   cursor: pointer;
 }
 
-.modal-body{
+.modal-body {
   margin: 15px 0px 0px 15px;
   background: none;
 }
 
-.modal-body img{
+.modal-body img {
   height: 180px;
   border-radius: 20px;
   cursor: pointer;
@@ -160,7 +160,7 @@ section {
   margin-right: 23px;
 }
 
-.modal-body .modal-image-div{
+.modal-body .modal-image-div {
   display: flex;
   align-items: center;
   background: #23232399;
@@ -171,16 +171,15 @@ section {
   position: absolute;
   user-select: none;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
 }
 
-
-.modal-body .modal-image-div:hover{
+.modal-body .modal-image-div:hover {
   opacity: 1;
 }
 
-.modal-body .modal-description{
+.modal-body .modal-description {
   display: flex;
   font-size: 18px;
   line-height: 30px;
@@ -190,61 +189,73 @@ section {
   transform: translateY(-5%);
 }
 
-@media (max-width:1300px) {
-  .modal-body .modal-description{
+@media (max-width: 1300px) {
+  .modal-body .modal-description {
     font-size: 15px;
- }
+  }
 }
-@media (max-width:600px) {
-  .modal-body .modal-description{
+@media (max-width: 600px) {
+  .modal-body .modal-description {
     display: block;
     font-size: 14px;
     height: 50vh;
     transform: translateY(0);
- }
- .modal-body img,.modal-body .modal-image-div{
-  float: none;
-  height: 80px;
-  width: 80px;
- }
- .modal-body .modal-image-div{
-  transform: translateY(-100%);
-  font-size: 12px;
- }
- .modal-title{
-  font-size: 18px;
- }
-}
-
-@media (max-width:400px){
-  body > main > section.hero > div > nav > div > div.flex.items-center.justify-between > a > p{
-    font-size: 16px;
   }
-  body > main > section.hero > div > div > h1{
-    font-size: 28px;
+  .modal-body img,
+  .modal-body .modal-image-div {
+    float: none;
+    height: 80px;
+    width: 80px;
   }
-  body > main > section.hero > div > div > p{
+  .modal-body .modal-image-div {
+    transform: translateY(-100%);
     font-size: 12px;
   }
-  #About > div > h1.text-center.text-\[2em\].sm\:text-center.sm\:text-lg.sm\:mt-3.md\:text-left.mt-1.xl\:text-left.md\:text-3xl.font-bold.text-stone-300.m-auto{
-    margin-top:-5px;
-  }
-  #About > div > h1.text-center.text-\[2em\].mb-3.md\:-mb-5.sm\:text-center.sm\:text-2xl.overflow-hidden.sm\:mt-3.md\:text-left.mt-1.xl\:text-left.md\:text-5xl.font-bold.text-slate-100.m-auto{
-    margin-top:-5px;
+  .modal-title {
+    font-size: 18px;
   }
 }
 
-@media (max-width: 1000px){
-  #About > div > p{
+@media (max-width: 400px) {
+  body
+    > main
+    > section.hero
+    > div
+    > nav
+    > div
+    > div.flex.items-center.justify-between
+    > a
+    > p {
+    font-size: 16px;
+  }
+  body > main > section.hero > div > div > h1 {
+    font-size: 28px;
+  }
+  body > main > section.hero > div > div > p {
+    font-size: 12px;
+  }
+  #About
+    > div
+    > h1.text-center.text-\[2em\].sm\:text-center.sm\:text-lg.sm\:mt-3.md\:text-left.mt-1.xl\:text-left.md\:text-3xl.font-bold.text-stone-300.m-auto {
+    margin-top: -5px;
+  }
+  #About
+    > div
+    > h1.text-center.text-\[2em\].mb-3.md\:-mb-5.sm\:text-center.sm\:text-2xl.overflow-hidden.sm\:mt-3.md\:text-left.mt-1.xl\:text-left.md\:text-5xl.font-bold.text-slate-100.m-auto {
+    margin-top: -5px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #About > div > p {
     font-size: 18px;
     line-height: 24px;
     font-family: monospace;
   }
 }
 
-
-@media (max-width:580px){
-  #About > div > p{
+@media (max-width: 580px) {
+  #About > div > p {
     display: block;
     width: 100%;
     text-align: center;
@@ -252,7 +263,7 @@ section {
     line-height: 22px;
     font-size: 17px;
   }
-  #About > div > div{
+  #About > div > div {
     text-align: center;
     float: none;
     align-self: center;
@@ -263,12 +274,42 @@ section {
     align-items: center;
     justify-items: center;
   }
-  #About > div > div img{
+  #About > div > div img {
     width: 128px;
     height: 128px;
-border-radius: 20px;
+    border-radius: 20px;
     text-align: center;
   }
-
+  #Contact > div > div > div > div.overflow-wrap.md\:w-2\/5.md\:text-left {
+    text-align: center;
+  }
+  #Contact
+    > div
+    > div
+    > div
+    > div.overflow-wrap.md\:w-2\/5.md\:text-left
+    > ul
+    > li
+    > a {
+    font-size: 14px;
+    margin: 3px;
+  }
+  /* #Contact > div > div > div > div.overflow-wrap.md\:w-2\/5.md\:text-left > ul > li > i{
+    display: none;
+  } */
+  #Contact > div {
+    overflow-wrap: anywhere;
+  }
+  #Contact {
+    overflow-wrap: anywhere;
+  }
+  #Contact > div > div > div{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 9px;
+    overflow-wrap:anywhere;
+  }
+  #Contact > div > div > div > div.overflow-wrap.md\:w-2\/5.md\:text-left{
+    width: 100%;
+  }
 }
-
