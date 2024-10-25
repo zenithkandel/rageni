@@ -215,3 +215,60 @@ section {
   font-size: 18px;
  }
 }
+
+@media (max-width:400px){
+  body > main > section.hero > div > nav > div > div.flex.items-center.justify-between > a > p{
+    font-size: 16px;
+  }
+  body > main > section.hero > div > div > h1{
+    font-size: 28px;
+  }
+  body > main > section.hero > div > div > p{
+    font-size: 12px;
+  }
+  #About > div > h1.text-center.text-\[2em\].sm\:text-center.sm\:text-lg.sm\:mt-3.md\:text-left.mt-1.xl\:text-left.md\:text-3xl.font-bold.text-stone-300.m-auto{
+    margin-top:-5px;
+  }
+  #About > div > h1.text-center.text-\[2em\].mb-3.md\:-mb-5.sm\:text-center.sm\:text-2xl.overflow-hidden.sm\:mt-3.md\:text-left.mt-1.xl\:text-left.md\:text-5xl.font-bold.text-slate-100.m-auto{
+    margin-top:-5px;
+  }
+}
+
+@media (max-width: 1000px){
+  #About > div > p{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: monospace;
+  }
+}
+
+
+@media (max-width:580px){
+  #About > div > p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 22px;
+    font-size: 17px;
+  }
+  #About > div > div{
+    text-align: center;
+    float: none;
+    align-self: center;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  #About > div > div img{
+    width: 128px;
+    height: 128px;
+border-radius: 20px;
+    text-align: center;
+  }
+
+}
+
